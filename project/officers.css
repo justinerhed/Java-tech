@@ -1,0 +1,758 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Source+Code+Pro:wght@300;500&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 625px;
+  width: 100%;
+  background-color: #0d6efd;
+  overflow: hidden;
+}
+
+.topnav {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 70px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4.1rem;
+  font-family: "montserrat", sans-serif;
+  position: relative;
+  left: 30px;
+  top: 100px;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: #0d6efd;
+  animation: typewriter 4s steps(37) forwards;
+}
+
+h1::after {
+  width: 0.1em;
+  background: white;
+  animation: typewriter 4s steps(37) forwards, blink 4s steps(37) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 94%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+:root {
+  --h2speed: 4s;
+}
+
+.container h2 {
+  color: white;
+  position: relative;
+  top: 150px;
+  left: 405px;
+  opacity: 0;
+  transform: translateY(5rem);
+  animation: h2s 2s ease var(--h2speed) forwards;
+  width: fit-content;
+}
+
+@keyframes h2s {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left {
+  height: 2500px;
+  width: 100%;
+  background-color: #ac8a8b;
+}
+
+.pres1 {
+  height: 400px;
+  width: 80%;
+  background-color: #fc440f;
+  position: relative;
+  left: 63px;
+  top: 690px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pres1 img {
+  width: 397px;
+  height: 400px;
+}
+
+.pres1-content {
+  position: relative;
+  left: 468px;
+  bottom: 330px;
+  height: 300px;
+  width: 50%;
+}
+
+.pres1-content h2 {
+  position: relative;
+  top: 32px;
+  left: 0px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-family: "source sans pro", monospace;
+}
+
+.pres1-content h3 {
+  margin-bottom: 5px;
+  font-family: "montserrat", sans-serif;
+}
+
+.pres1-content p {
+  margin-top: 20px;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+}
+
+.pres2 {
+  height: 400px;
+  width: 80%;
+  background-color: #fc440f;
+  position: relative;
+  left: 63px;
+  top: 1250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pres2 img {
+  width: 397px;
+  height: 400px;
+}
+
+.pres2-content {
+  position: relative;
+  left: 468px;
+  bottom: 330px;
+  height: 300px;
+  width: 50%;
+}
+
+.pres2-content h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: "source sans pro", monospace;
+}
+
+.pres2-content h3 {
+  margin-bottom: 5px;
+  font-family: "montserrat", sans-serif;
+}
+
+.pres2-content p {
+  margin-top: 20px;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+}
+
+.pres3 {
+  height: 400px;
+  width: 80%;
+  background-color: #fc440f;
+  position: relative;
+  left: 63px;
+  top: 1750px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pres3 img {
+  width: 397px;
+  height: 400px;
+}
+
+.pres3-content {
+  position: relative;
+  left: 468px;
+  bottom: 330px;
+  height: 300px;
+  width: 50%;
+}
+
+.pres3-content h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: "source sans pro", monospace;
+}
+
+.pres3-content h3 {
+  margin-bottom: 5px;
+  font-family: "montserrat", sans-serif;
+}
+
+.pres3-content p {
+  margin-top: 20px;
+  letter-spacing: 3px;
+  font-family: "montserrat", sans-serif;
+}
+
+.reveal {
+  position: absolute;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.prev-officer-content {
+  height: 550px;
+  width: 100%;
+  background-color: #7c9299;
+  overflow: hidden;
+  position: relative;
+  left: 0px;
+  top: 1999px;
+}
+
+.prev-officer-content h2 {
+  font-size: 2rem;
+  font-family: "source code pro", monospace;
+  float: right;
+  padding: 14px 180px;
+  margin-bottom: 33px;
+  color: #fff;
+}
+
+.popup {
+  height: 400px;
+  width: 400px;
+  background-color: teal;
+  left: 60px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup img {
+  height: 400px;
+  width: 400px;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 162%;
+  height: 500px;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -80px;
+  z-index: 100;
+  left: 90%;
+  box-shadow: 10px 10px 10px white;
+}
+
+.popup .popuptext img {
+  width: 650px;
+  height: 500px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+}
+
+.popup3 {
+  height: 400px;
+  width: 400px;
+  background-color: teal;
+  left: 60px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup3 img {
+  height: 400px;
+  width: 400px;
+}
+
+/* The actual popup */
+.popup3 .popuptext3 {
+  visibility: hidden;
+  width: 162%;
+  height: 500px;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -81px;
+  z-index: 100;
+  left: -11%;
+  box-shadow: 10px 10px 10px white;
+  overflow: hidden;
+}
+
+.popup3 .popuptext3 img {
+  width: 648px;
+  height: 500px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup3 .show3 {
+  visibility: visible;
+}
+
+.popup4 {
+  height: 400px;
+  width: 400px;
+  background-color: teal;
+  left: 60px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup4 img {
+  height: 400px;
+  width: 400px;
+}
+
+/* The actual popup */
+.popup4 .popuptext4 {
+  visibility: hidden;
+  width: 162%;
+  height: 500px;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -81px;
+  z-index: 100;
+  left: -112%;
+  box-shadow: 10px 10px 10px white;
+  overflow: hidden;
+}
+
+.popup4 .popuptext4 img {
+  width: 648px;
+  height: 500px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup4 .show4 {
+  visibility: visible;
+}
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 95%;
+  top: 75%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.arrow a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: #0d6efd;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 600px;
+  }
+
+  .left {
+    height: 2400px;
+  }
+
+  .topnav {
+    height: 120px;
+  }
+
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .container h1 {
+    color: #fff;
+    font-size: 4.1rem;
+    font-family: "montserrat", sans-serif;
+    position: relative;
+    left: 50px;
+    top: 0px;
+  }
+
+  .container h1::before,
+  .container h1::after {
+    display: none;
+  }
+
+  .container h1::before {
+    display: none;
+  }
+
+  .container h1::after {
+    display: none;
+  }
+
+  .container h2 {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    color: white;
+    opacity: 0;
+    transform: translateY(5rem);
+    animation: h2s 2s ease forwards;
+    width: fit-content;
+  }
+
+  @keyframes h2s {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .pres1.reveal {
+    position: relative;
+    top: 30px;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .pres1 img {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 60px;
+    top: 10px;
+    object-fit: cover;
+  }
+
+  .pres1-content {
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .pres1-content h2 {
+    font-size: 25px;
+  }
+
+  .pres1-content h3 {
+    font-size: 17px;
+  }
+
+  .pres1-content p {
+    font-size: 15px;
+  }
+
+  .pres2.reveal {
+    position: relative;
+    top: 100px;
+    height: 450px;
+  }
+
+  .pres2 img {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    object-fit: cover;
+  }
+
+  .pres2-content {
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .pres2-content h2 {
+    font-size: 25px;
+  }
+
+  .pres2-content h3 {
+    font-size: 17px;
+  }
+
+  .pres2-content p {
+    font-size: 15px;
+  }
+
+  .pres3.reveal {
+    position: relative;
+    top: 200px;
+    height: 450px;
+  }
+
+  .pres3 img {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    object-fit: cover;
+  }
+
+  .pres3-content {
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+    height: 300px;
+    width: 100%;
+  }
+
+  .pres3-content h2 {
+    font-size: 25px;
+  }
+
+  .pres3-content h3 {
+    font-size: 17px;
+  }
+
+  .pres3-content p {
+    font-size: 15px;
+  }
+
+  .prev-officer-content {
+    height: 1300px;
+    width: 100%;
+    background-color: #000;
+    overflow: visible;
+    position: hidden;
+    left: 0px;
+    top: 300px;
+  }
+
+  .prev-officer-content h2 {
+    display: none;
+  }
+
+  .popup {
+    height: 400px;
+    width: 400px;
+    background-color: teal;
+    left: 60px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .popup img {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 142%;
+    height: 500px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+    left: -20%;
+    box-shadow: 10px 10px 10px white;
+    overflow: hidden;
+  }
+
+  .popup .popuptext img {
+    width: 600px;
+    height: 500px;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+  }
+
+  .popup3 {
+    height: 400px;
+    width: 400px;
+    background-color: teal;
+    left: 60px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .popup3 img {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* The actual popup */
+  .popup3 .popuptext3 {
+    visibility: hidden;
+    width: 140%;
+    height: 500px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: -338px;
+    z-index: 100;
+    left: -19%;
+    box-shadow: 10px 10px 10px white;
+    overflow: hidden;
+  }
+
+  .popup3 .popuptext3 img {
+    width: 580px;
+    height: 500px;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .popup3 .show3 {
+    visibility: visible;
+  }
+
+  .popup4 {
+    height: 400px;
+    width: 400px;
+    background-color: teal;
+    left: 60px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .popup4 img {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* The actual popup */
+  .popup4 .popuptext4 {
+    visibility: hidden;
+    width: 141%;
+    height: 500px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: -742px;
+    z-index: 100;
+    left: -19%;
+    box-shadow: 10px 10px 10px white;
+    overflow: hidden;
+  }
+
+  .popup4 .popuptext4 img {
+    width: 580px;
+    height: 500px;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .popup4 .show4 {
+    visibility: visible;
+  }
+
+  .arrow {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 90%;
+    top: 10%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    height: 620px;
+    background-color: red;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

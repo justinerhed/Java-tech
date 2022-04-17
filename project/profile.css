@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #111222;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content {
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .img {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.content .image img {
+  z-index: 111;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.content .text-box {
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 15px;
+  max-width: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(200px, 150px);
+  overflow: hidden;
+}
+
+.content .text-box h3 {
+  font-size: 1.5rem;
+  padding: 5px;
+  transform: translateY(20rem);
+  animation: h3 3s ease forwards;
+}
+
+@keyframes h3 {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content .text-box p {
+  transform: translateY(20rem);
+  animation: p 3s ease forwards;
+}
+
+@keyframes p {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.media-icons {
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+.media-icons li {
+  list-style: none;
+  float: right;
+  padding: 10px 22px;
+  margin-top: 25px;
+  transform: translateY(3rem);
+  animation: icons 5s ease forwards;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+@keyframes icons {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

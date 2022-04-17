@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Source+Code+Pro:wght@300;500&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+body {
+  font-family: "montserrat", sans-serif;
+  font-size: 10pt;
+}
+
+.up {
+  height: 630px;
+  width: 100%;
+  background-color: #0d6efd;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation li {
+  list-style: none;
+  float: left;
+  padding: 5px 40px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.up h2 {
+  font-size: 5rem;
+  color: #fff;
+  position: relative;
+  top: 200px;
+  left: 300px;
+}
+
+.up p {
+  font-size: 3rem;
+  color: #fff;
+  position: relative;
+  top: 210px;
+  left: 500px;
+}
+
+#gameCanvas {
+  background-color: rgb(64, 158, 221);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

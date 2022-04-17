@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d6efd;
+}
+
+.head {
+  height: 200px;
+  width: 99%;
+  overflow: hidden;
+  background-color: #cc142d;
+  margin: 5px 5px 0px 5px;
+  padding: 50px;
+}
+
+.head img {
+  position: absolute;
+  left: 188px;
+  bottom: 450px;
+  height: 150px;
+  width: 150px;
+}
+
+.head h1 {
+  font-size: 3rem;
+  color: white;
+  font-family: "montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .head {
+    padding: 25px;
+  }
+
+  .head img {
+    position: absolute;
+    left: 20px;
+    bottom: 400px;
+  }
+
+  .head h1 {
+    margin-left: 150px;
+    width: 70%;
+  }
+}
+
+.main-body {
+  height: 600px;
+  width: 99%;
+  margin: 0px 5px 0px 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.left {
+  height: 600px;
+  width: 30%;
+  background-color: gray;
+  padding: 100px;
+  overflow: hidden;
+}
+
+.left li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+.left a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-family: "poppins", sans-serif;
+}
+
+.right {
+  height: 600px;
+  width: 69%;
+  position: absolute;
+  top: 205px;
+  left: 406px;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+
+.header li {
+  list-style: none;
+  float: right;
+  padding: 16px 150px;
+}
+
+.header button {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "poppins", sans-serif;
+  color: #cc142d;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  height: 530px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: 520px;
+  width: 100%;
+  background-color: gray;
+  padding: 50px;
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-family: "montserrat", sans-serif;
+}
+
+.content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .main-body {
+    height: 800px;
+  }
+
+  .left {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  .left li {
+    float: right;
+    padding: 10px 31px;
+  }
+
+  .left a {
+    font-size: 1.2rem;
+  }
+
+  .right {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+  .header li {
+    padding: 0px 50px;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+}
+
+.content2 {
+  height: 520px;
+  width: 100%;
+  background-color: grey;
+  padding: 50px;
+  margin-top: 20px;
+  display: none;
+}
+
+.content2 h2 {
+  font-size: 2.5rem;
+  font-family: "montserrat", sans-serif;
+}
+
+.content2 p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.content.show2 {
+  display: none;
+}
+
+.content2.show {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #37323e;
+  height: 250px;
+  margin: 0px 5px 5px 5px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 150px 100px;
+}
+
+.grid-item {
+  padding: 5px;
+}
+
+.grid-item h2 {
+  font-size: 2rem;
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+
+.grid-item p {
+  color: rgba(0, 0, 0, 70);
+  font-family: "montserrat", sans-serif;
+  line-height: 1.4;
+}
+
+.grid-item h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 5px;
+  }
+
+  .grid {
+    gap: 20px;
+    grid-template-rows: 400px 400px;
+  }
+}
